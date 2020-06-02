@@ -16,7 +16,7 @@ To connect from a client pod:
       containers:
       - name: zookeeper-client
         image: {{ .Values.image }}:{{ .Values.imageTag }}
-        command:
+        command:ert
           - sh
           - -c
           - "exec tail -f /dev/null"
